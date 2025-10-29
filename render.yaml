@@ -18,20 +18,6 @@ services:
         value: false
       - key: ALLOWED_HOSTS
         sync: false
-    
-  # Frontend React
-  - type: web
-    name: smartpark-frontend
-    runtime: node
-    buildCommand: "cd frontend && npm install && npm run build"
-    startCommand: "cd frontend && npx serve -s build -l 3000"
-    envVars:
-      - key: NODE_VERSION
-        value: 18.18.0
-      - key: REACT_APP_API_URL
-        value: https://smartpark-9a88.onrender.com
-      - key: REACT_APP_GOOGLE_MAPS_API_KEY
-        sync: false
 
 # Base de datos PostgreSQL
 databases:
