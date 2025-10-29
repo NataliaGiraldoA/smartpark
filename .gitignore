@@ -1,0 +1,40 @@
+venv
+
+# Ignorar archivos de entorno local
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Ignorar base de datos SQLite (usar PostgreSQL en producción)
+*.sqlite3
+db.sqlite3
+
+# Ignorar archivos de Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos de build
+frontend/build/
+backend/staticfiles/
+
+# Ignorar archivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
