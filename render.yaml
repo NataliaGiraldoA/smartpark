@@ -29,7 +29,7 @@ services:
       - key: NODE_VERSION
         value: 18.18.0
       - key: REACT_APP_API_URL
-        value: https://smartpark-backend.onrender.com
+        value: https://smartpark-9a88.onrender.com
       - key: REACT_APP_GOOGLE_MAPS_API_KEY
         sync: false
 
